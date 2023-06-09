@@ -28,7 +28,7 @@ body {
 
 header .header__content {
   background-color: #0d369f;
-  color: white;
+  color: #fff;
   padding: 14px 15px;
 }
 header .header__content .header__top .header__top__left li {
@@ -36,13 +36,13 @@ header .header__content .header__top .header__top__left li {
   margin-right: 2em;
 }
 header .header__content .header__top .header__top__left li a {
-  color: white;
   font-size: 15px;
   font-weight: 500;
+  color: #fff;
   transition: all 0.5s;
 }
 header .header__content .header__top .header__top__left li a:hover {
-  color: #e84e9a;
+  color: #ff6e65;
 }
 header .header__content .header__top .header__top__left li i {
   margin-right: 8px;
@@ -52,13 +52,13 @@ header .header__content .header__top .header__top__right li {
   margin-right: 2em;
 }
 header .header__content .header__top .header__top__right li a {
-  color: white;
   font-size: 15px;
   font-weight: 500;
+  color: #fff;
   transition: all 0.5s;
 }
 header .header__content .header__top .header__top__right li a:hover {
-  color: #e84e9a;
+  color: #ff6e65;
 }
 header .header__bottom {
   height: 90px;
@@ -79,9 +79,9 @@ header .header__bottom .navbar-toggler .fa-times {
 header .header__bottom h1 a {
   margin: 0;
   padding: 0;
-  font-size: 26px;
-  color: #0d369f;
+  font-size: 25px;
   font-weight: 600;
+  color: #0d369f;
   transition: all 0.5s;
   position: relative;
   max-width: 150px;
@@ -102,10 +102,9 @@ header .header__bottom #navBar #navbarNavDropdown .nav-item a {
   padding: 5px 10px;
   font-size: 16px;
   font-weight: 600;
+  color: black;
   text-transform: uppercase;
   transition: all 0.5s;
-  font-weight: 500;
-  color: black;
   z-index: 10;
 }
 header .header__bottom #navBar #navbarNavDropdown .nav-item a:hover {
@@ -117,22 +116,21 @@ header .header__bottom #navBar #navbarNavDropdown .nav-item a.active {
 header .header__bottom form input {
   font-size: 15px;
   color: black;
-  background: white;
+  background: #fff;
   padding: 10px 35px 10px 20px;
   width: 100%;
   border-radius: 30px;
-  border: 2px solid #eee;
+  border: 2px solid #e2ebfc;
 }
-header .header__bottom form .btn {
+header .header__bottom form i {
   color: #0d369f;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  bottom: 14px;
+  right: 0px;
   padding: 0 20px 0 0;
   transition: all 0.5s;
 }
-header .header__bottom form .btn:hover {
+header .header__bottom form i:hover {
   color: #ff6e65;
 }
 header .header__bottom h3 {
@@ -141,9 +139,9 @@ header .header__bottom h3 {
   text-transform: uppercase;
 }
 header .header__bottom h3 a {
-  color: black;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
+  color: black;
   position: relative;
   z-index: 10;
   padding: 20px;
@@ -196,26 +194,26 @@ header .header__bottom .fix__top {
   max-width: 550px;
 }
 .shoes__carousel .carousel-inner .carousel__text h5 {
-  text-transform: uppercase;
   font-size: 40px;
   font-weight: 500;
-  color: white;
+  color: #fff;
+  text-transform: uppercase;
 }
 .shoes__carousel .carousel-inner .carousel__text p {
-  color: white;
+  color: #fff;
   font-weight: 400;
   line-height: 2;
   margin: 20px 0;
 }
 .shoes__carousel .carousel-inner .carousel__text button {
+  color: #fff;
   padding: 17px 25px;
   background-color: #0d369f;
-  color: white;
   font-size: 17px;
-  border-radius: 30px;
   border: none;
-  margin-top: 20px;
+  border-radius: 30px;
   transition: all 0.5s;
+  margin-top: 30px;
 }
 .shoes__carousel .carousel-inner .carousel__text button:hover {
   color: #ff6e65;
@@ -244,7 +242,7 @@ header .header__bottom .fix__top {
 }
 .product .product__content .product__item {
   width: 500px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
   border-radius: 8px;
   padding: 20px;
@@ -270,12 +268,12 @@ header .header__bottom .fix__top {
   color: #ff6e65;
 }
 .product .product__content .product__item .product__text .product__text__right a button {
+  color: #fff;
   padding: 10px 15px;
   background-color: #0d369f;
-  color: white;
   font-size: 17px;
-  border-radius: 30px;
   border: none;
+  border-radius: 30px;
   transition: all 0.5s;
 }
 .product .product__content .product__item .product__text .product__text__right a button:hover {
@@ -298,17 +296,17 @@ footer .footer__top .footer__title .footer__right {
   margin-top: 70px;
 }
 footer .footer__top .footer__title .footer__right .footer__items h6 {
-  color: #fff;
   font-size: 16px;
+  font-weight: 700;
+  color: #fff;
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(23, 54, 88, 0.4);
   padding-bottom: 10px;
-  font-weight: bold;
 }
 footer .footer__top .footer__title .footer__right .footer__items p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #cecece;
   letter-spacing: 0.4px;
@@ -317,7 +315,7 @@ footer .footer__top .footer__title .footer__right .footer__items ul li {
   margin: 10px 0;
 }
 footer .footer__top .footer__title .footer__right .footer__items ul li a {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #cecece;
   margin: 0 0 10px 0;
@@ -386,9 +384,10 @@ footer .copy_right p a {
   /* transition: all 0.2s; */
   visibility: hidden;
   opacity: 0;
+  transition: all 0.5s;
 }
 .backToTop:hover {
-  color: #fff;
+  color: #ff6e65;
 }
 
 .cd-top--is-visible {
@@ -420,29 +419,33 @@ footer .copy_right p a {
   margin-bottom: 30px;
 }
 .intro .intro__content .intro__right p {
-  color: #ff6e65;
-  font-weight: 500;
-  line-height: 1.5;
   font-size: 30px;
+  font-weight: 500;
+  color: #ff6e65;
+  line-height: 1.5;
 }
 .intro .intro__content .intro__right h5 {
   font-size: 16px;
-  color: #ff6e65;
   font-weight: 500;
+  color: #ff6e65;
   margin: 20px 0;
 }
 .intro .intro__content .intro__right .intro__size button {
-  padding: 10px 15px;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #a0a0a0;
   color: #cecece;
+  padding: 10px 15px;
+  background-color: #a0a0a0;
+  font-size: 16px;
+  border: none;
+  border-radius: none;
+  transition: all 0.5s;
+  font-weight: 500;
   margin-bottom: 20px;
   margin-right: 5px;
-  transition: all 0.5s;
 }
 .intro .intro__content .intro__right .intro__size button:hover {
   color: #ff6e65;
+}
+.intro .intro__content .intro__right .intro__size button:hover {
   background-color: #0d369f;
 }
 .intro .intro__content .intro__right h4 {
@@ -534,12 +537,12 @@ footer .copy_right p a {
   border-bottom: solid 2px plum;
   outline: none;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #f5f9fe;
 }
 .registation .container .register .registerContent .registerItem input::placeholder {
   color: black;
-  font-weight: bold;
+  font-weight: 700;
 }
 .registation .container .register .registerContent .registerItem .dauSao {
   position: absolute;
@@ -554,7 +557,7 @@ footer .copy_right p a {
   margin-top: 30px;
   background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
   background-size: 200%;
-  color: white;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -569,14 +572,14 @@ footer .copy_right p a {
   margin-top: 10px;
 }
 .registation .container .register .registerContent .checkValid {
-  color: red;
   opacity: 50%;
   font-size: 15px;
   font-weight: 500;
+  color: red;
 }
 .registation .container .register .registerContent #hienThiRegister p {
   margin-top: 20px;
-  color: #ff6e65;
   font-size: 20px;
   font-weight: 500;
+  color: #ff6e65;
 }/*# sourceMappingURL=index.css.map */
