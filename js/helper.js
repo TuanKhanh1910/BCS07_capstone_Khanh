@@ -1,17 +1,9 @@
-// lấy giá trị người dùng
-
-function layGiaTriInput() {
-  let valid = true;
-  valid =
-    regexEmail("email", "kiemTraEmail") &
-    regexPass("pass", "kiemTraPass") &
-    regexPassConfirm("pass", "passConfirm", "kiemTraPassConfirm") &
-    regexName("name", "kiemTraname") &
-    regexPhone("phone", "kiemTraPhone") &
-    regexGender("male", "female", "kiemTraGender");
-
-  if (!valid) {
-    console.log("first");
-    return;
-  }
+function ganGiaTriChoInput(email, pass, passConfirm, name, phone, gender) {
+  document.getElementById("email").value = email;
+  document.getElementById("pass").value = pass;
+  document.getElementById("passConfirm").value = passConfirm;
+  document.getElementById("name").value = name;
+  document.getElementById("phone").value = phone;
+  document.getElementById("men").value = gender;
+  document.getElementById("women").value = gender;
 }

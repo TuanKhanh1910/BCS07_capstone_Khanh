@@ -1,14 +1,3 @@
-// function kiemTraRong(checkInput, idThongBao) {
-//   if (checkInput) {
-//     // document.getElementById(idThongBao).style.display = "none";
-//     document.getElementById(idThongBao).innerHTML = "";
-//     return true;
-//   } else {
-//     // document.getElementById(idThongBao).style.display = "block";
-//     document.getElementById(idThongBao).innerHTML = "Vui lòng nhập đầy đủ";
-//     return false;
-//   }
-// }
 function regexEmail(id, idThongBao) {
   let checkEmail = document.getElementById(id).value;
   if (checkEmail == "") {
@@ -98,19 +87,19 @@ function regexPhone(id, idThongBao) {
   }
 }
 
-function regexGender(idMale, idFemale, idThongBao) {
-  let checkMale = document.getElementById(idMale).checked;
-  let checkFemale = document.getElementById(idFemale).checked;
-  console.log(checkMale);
-  console.log(checkFemale);
-  if (checkMale == false && checkFemale == false) {
-    document.getElementById(idThongBao).innerHTML = "Vui lòng chọn giới tính";
-    return false;
-  } else {
-    document.getElementById(idThongBao).innerHTML = "";
-    return true;
-  }
-}
+// function regexGender(idMale, idFemale, idThongBao) {
+//   let checkMale = document.getElementById(idMale).checked;
+//   let checkFemale = document.getElementById(idFemale).checked;
+//   console.log(checkMale);
+//   console.log(checkFemale);
+//   if (checkMale == false && checkFemale == false) {
+//     document.getElementById(idThongBao).innerHTML = "Vui lòng chọn giới tính";
+//     return false;
+//   } else {
+//     document.getElementById(idThongBao).innerHTML = "";
+//     return true;
+//   }
+// }
 
 // check gender
 //   function regexGender(id, idThongBao) {
