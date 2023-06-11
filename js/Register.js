@@ -8,7 +8,7 @@ function addUser() {
     regexPhone("phone", "kiemTraPhone");
 
   if (!valid) {
-    console.log(valid);
+    // console.log(valid);
     // document.getElementById(
     //   "hienThiRegister"
     // ).innerHTML = `<p style="color: red;">Vui lòng điền đầy đủ thông tin</p>`;

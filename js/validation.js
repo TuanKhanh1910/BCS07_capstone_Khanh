@@ -2,6 +2,7 @@ function regexEmail(id, idThongBao) {
   let checkEmail = document.getElementById(id).value;
   if (checkEmail == "") {
     document.getElementById(idThongBao).innerHTML = "Vui lòng nhập đầy đủ";
+    return false;
   } else {
     let mauRegexEmail =
       /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -9,9 +10,11 @@ function regexEmail(id, idThongBao) {
     let mailHopLe = mauRegexEmail.test(checkEmail);
     if (mailHopLe) {
       document.getElementById(idThongBao).innerHTML = "";
+      return true;
     } else {
       document.getElementById(idThongBao).innerHTML =
         "Vui lòng nhập email hợp lệ";
+      return false;
     }
   }
 }
@@ -20,14 +23,17 @@ function regexPass(id, idThongBao) {
   let checkPass = document.getElementById(id).value;
   if (checkPass == "") {
     document.getElementById(idThongBao).innerHTML = "Vui lòng nhập đầy đủ";
+    return false;
   } else {
     let mauRegexPass = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     let hopLe = mauRegexPass.test(checkPass);
     if (hopLe == true && checkPass.length >= 6) {
       document.getElementById(idThongBao).innerHTML = "";
+      return true;
     } else {
       document.getElementById(idThongBao).innerHTML =
         "Mật khẩu ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt";
+      return false;
     }
   }
 }
@@ -53,14 +59,17 @@ function regexName(id, idThongBao) {
   let checkName = document.getElementById(id).value;
   if (checkName == "") {
     document.getElementById(idThongBao).innerHTML = "Vui lòng nhập đầy đủ";
+    return false;
   } else {
     let chiLayChu = /^[\p{L} ]+$/u;
     let nameHopLe = chiLayChu.test(checkName);
     if (nameHopLe) {
       document.getElementById(idThongBao).innerHTML = "";
+      return true;
     } else {
       document.getElementById(idThongBao).innerHTML =
         "Vui lòng nhập tên chỉ chứa ký tự chữ";
+      return false;
     }
   }
 }
@@ -70,19 +79,23 @@ function regexPhone(id, idThongBao) {
   let checkPhone = document.getElementById(id).value;
   if (checkPhone == "") {
     document.getElementById(idThongBao).innerHTML = "Vui lòng nhập đầy đủ";
+    return false;
   } else {
     let chiLaySo = /[0-9]/g;
     let phoneHopLe = chiLaySo.test(checkPhone);
     if (phoneHopLe) {
       if (checkPhone.length == 10) {
         document.getElementById(idThongBao).innerHTML = "";
+        return true;
       } else {
         document.getElementById(idThongBao).innerHTML =
           "Vui lòng nhập số phone hợp lệ";
+        return false;
       }
     } else {
       document.getElementById(idThongBao).innerHTML =
         "Vui lòng nhập phone chỉ chứa ký tự số";
+      return false;
     }
   }
 }
